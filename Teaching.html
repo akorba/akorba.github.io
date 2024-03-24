@@ -63,24 +63,89 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 style="margin-bottom: 50px;">Teaching</h1>
+                        <h1 style="margin-bottom: 50px;">Teaching - Sampling: From MCMC to Generative Modeling</h1>
 
-                        <p style="font-size: 18px;">In construction for more ressources.</a>
+                            <p style="font-size: 18px;">Please fill the following questionnaire:</a>
                         </p>
-                        <!--<p style="font-size: 18px;"> <ul style="padding-left:0;margin-left: 1.2em;font-size: 18px;"> 
-                            I was also a teaching assistant at Télécom ParisTech for the following Master courses:</p>
-                            <li>Machine Learning, with Python (2016-2018): <br>
-                            supervised learning (perceptron, k-nearest neighbor, support vector machines, bagging, boosting, random forests), unsupervised learning (k-means, spectral clustering, dimensionality reduction) </li>
-                            <br>
-                            <li>Introduction to Bayesian Learning, with R (2017-2018) : <br>
-                             Expectation-Maximization algorithm, Variational Bayes, Metropolis-Hastings algorithm
+                         <ul style="padding-left:0;margin-left: 1.2em;font-size: 15px;">
+                            <li> <a href="https://docs.google.com/forms/d/1Dt_5ir-hcPYsbKe7Z-SybcOaalW65k6r6xVSiUVwy80/edit">Questionnaire</a> <br> 
                             </li>
-                            <br>
-                            <li>Econometrics, with MATLAB (2015-2016): <br>
-                            linear models and statistical hypothesis tests (t-test, F-test, autocorrelation test for time series)
-                            </li>
-                            </ul>
-                        </p>-->
+                         </ul>
+
+                        <p style="font-size: 18px;">Course</a>
+                        </p>
+                        Dates: 26th, 27th morning; 2nd, 16th, 23rd, 30th (afternoon). At least 2 practical sessions (2nd and 30th). Bring your computers.
+                        <br><br>
+                        Slides are in construction and are susceptible to change by the time I teach the course, especially Part III is in construction. Part I~30 slides, Part II~80 slides, Part III~30 slides. Part II is long because we will spend time on some important notions such as gradient flows, score, or continuity equations which are crucial for NF and DM for instance.<br><br>
+                         <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
+                            
+                            <li> <a href="resources/PartI.pdf">Part I</a> Motivation, Divergences between probability distributions, Reminders on basics from MCMC<br>  
+                         </li>
+                            <li> <a href="resources/PartII.pdf">Part II </a> (Sampling as Optimization of the KL): gradient flows in finite and infinite dimensions, continuity equation, Langevin Monte Carlo<br>  
+                         </li>
+                         <li> Part III (Generative Modeling): Normalizing Flows (NF), Diffusion Models (DM) - if time allows briefly GANs and VAEs.<br>  
+                         </li>
+                     </ul>
+
+                        <p style="font-size: 14px;">Additional Resources:</a>
+                        </p>
+
+                         <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
+                            
+                            <li> <a href="https://nchopin.github.io/teaching.html">Simulation and Monte Carlo methods</a> by Nicolas Chopin<br>  
+                         </li>
+                            <li> <a href="https://wiki.randaldouc.xyz/lib/exe/fetch.php?media=world:polymcmc.pdf">A crash course in Monte Carlo methods by Markov chains</a> by Randal Douc and Sholom Schechtman<br>  
+                         </li>
+                         <li> <a href="https://www.math.cuhk.edu.hk/course_builder/2021/math2020b/Chapter%202%20Change%20of%20Variables.pdf">Change of Variables formula</a> Change of Variables formula<br>  
+                         </li>
+                     </ul>
+                     <p style="font-size: 18px;">(Practical) Resources.</a>
+                        </p> We won't have time to go through everything of course, but here are several practical Python notebooks that we may go through together or by yourself; or can even serve as a basis for a project if implemented in combination with novel ideas or datasets.
+                         <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
+                           <li> Langevin Monte carlo
+                            <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
+                            <li>Bayesian Logistic Regression on simulated data, <a href="code/Langevin_Monte_Carlo_Logistic_Regression_Simulated_Data.ipynb" download>link</a> </li>
+                        </ul>
+                            <li> Normalizing Flows
+                            <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
+                            <li>Normalizing Flow in 2D on Mixture of Gaussians, <a href="https://github.com/marylou-gabrie/tutorial-sampling-enhanced-w-generative-models/blob/main/sampling_gen_model_tutorial_solutions.ipynb">link</a> - check ReadMe to run it on Google Colab.</li>
+                            <li>To go further on Normalizing Flows (on images), <a href="https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial11/NF_image_modeling.html">link</a></li>
+                        </ul>
+
+                            <li> Deep Generative Models
+                            <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
+                            <li>GANs and VAEs, Deep Learning Indaba 2019, <a href="https://colab.research.google.com/github/deep-learning-indaba/indaba-pracs-2019/blob/master/3b_generative_models.ipynb">link</a> </li>
+                <li>Denoising Diffusion, Deep Learning Indaba 2012, <a href="https://github.com/deep-learning-indaba/indaba-pracs-2022/blob/main/practicals/deep_generative_models.ipynb
+                            ">link</a> </li>
+                             </ul>
+
+                     </ul>
+
+                     <p style="font-size: 18px;">Project.</a>
+                     </p>
+                        The course project will give the students a chance to explore MCMC and/or generative modeling in greater detail. Course projects will be done in groups of up to 3 students and can fall into one or more of the following categories:
+                        <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
+<li>Application of MCMC or deep generative models on a novel task/dataset.</li>
+<li>Algorithmic improvements into the evaluation, learning and/or inference of deep generative models.</li>
+<li>Theoretical analysis of any aspect of existing deep generative models.</li>
+ </ul>
+The report must include theoretical, methodological and experimental considerations. You will be evaluated on these three aspects. Please indicate the contribution of each member of the team in the report. We do not expect the students to reproduce some of the high-dimensional experiments presented in some of these papers as we are aware of the compute limitations.<br><br>
+The deadline for submission is 26th of April.
+Please send your<br>
+* pdf<br>
+* colab link with experiments/code<br>
+to anna.korba@ensae.fr.
+                        </p>
+                        Some examples:
+                         <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
+                            
+                            <li> Implement in Python Langevin Monte Carlo with birth and death dynamics as in <a href="https://arxiv.org/pdf/1905.09863.pdf">this paper</a> or <a href="https://arxiv.org/pdf/2305.05529.pdf">that paper</a>. No need to fully undertand the paper, but at least the pseudocode and reproduce the experiments. Can you identify setting where birth-death dynamics improve over standard LMC?<br>  
+                         </li>
+                            <li> Investigate the data mollification effect as in <a href="https://arxiv.org/pdf/2305.18900.pdf">this paper</a> to compare different generative models on a set of experiments.<br>  
+                         </li>
+
+                     </ul>
+
 
                     </div>
                 </div>
