@@ -103,10 +103,13 @@
                      <p style="font-size: 18px;">(Practical) Resources.</a>
                         </p> We won't have time to go through everything of course, but here are several practical Python notebooks that we may go through together or by yourself; or can even serve as a basis for a project if implemented in combination with novel ideas or datasets.
                          <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
-                           <li> Langevin Monte carlo
+                           <li> Langevin Monte carlo/Metropolis Hasting/Hamiltonian Monte Carlo
                             <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
-                            <li>Bayesian Logistic Regression on simulated data, <a href="code/Langevin_Monte_Carlo_Logistic_Regression_Simulated_Data.ipynb" download>link</a> </li>
+
                             <li>Stochastic Langevin with linear model on simulated data <a href="code/Umut_TP.ipynb" download>link</a> (solution after the practical session)</li>
+                            <li>Bayesian Logistic Regression on simulated data, <a href="code/Langevin_Monte_Carlo_Logistic_Regression_Simulated_Data.ipynb" download>link</a> </li>
+                            <li>Metropolis Hasting, <a href="code/Metropolis_Hastings.ipynb" download>link</a> </li>
+                            <li>MALA vs HMC, <a href="code/mh_mala_hmc_correction.ipynb" download>link</a> </li>
                             <!--<li>Bayesian Logistic Regression on real data, <a href="https://bayesball.github.io/BOOK/bayesian-multiple-regression-and-logistic-models.html"> in R</a> or <a href="">Python</a>-->
                         </ul>
                             <li> Normalizing Flows
@@ -133,7 +136,7 @@
 <li>Theoretical analysis of any aspect of existing deep generative models.</li>
  </ul>
 The report must include theoretical, methodological and experimental considerations. You will be evaluated on these three aspects. Please indicate the contribution of each member of the team in the report. We do not expect the students to reproduce some of the high-dimensional experiments presented in some of these papers as we are aware of the compute limitations.<br><br>
-The deadline for submission is 26th of April.
+The deadline for submission is 26th of April. You will be asked to present your result during an oral defence (eg with slides and/or notebook).
 Please send your<br>
 * pdf<br>
 * colab link with experiments/code<br>
@@ -143,6 +146,10 @@ to anna.korba@ensae.fr.
                          <ul style="padding-left:0;margin-left: 1.2em;font-size: 14px;">
                             
                             <li> Implement in Python Langevin Monte Carlo with birth and death dynamics as in <a href="https://arxiv.org/pdf/1905.09863.pdf">this paper</a> or <a href="https://arxiv.org/pdf/2305.05529.pdf">that paper</a>. No need to fully undertand the paper, but at least the pseudocode and reproduce the experiments. Can you identify setting where birth-death dynamics improve over standard LMC?<br>  
+                         </li>
+                         <li> Study the results of Bayesian logistic regression on real data (see <a href="https://github.com/WillKoehrsen/Data-Analysis/blob/master/bayesian_log_reg/Bayesian-Logistic-Regression.ipynb">here</a> for an example of what can be done) on a classification dataset (see UCI repository, or some examples as the ones in Section 5 of  <a href="https://arxiv.org/pdf/1608.04471.pdf">this paper</a>).<br>  
+                         </li>
+                         <li> Investigate the performance of Bayesian Neural Networks (see a pytorch implementation <a href="https://github.com/JavierAntoran/Bayesian-Neural-Networks">here</a>) on different datasets (eg Fashion Mnist, or other classification datasets as the ones in Section 5 of  <a href="https://arxiv.org/pdf/1608.04471.pdf">this paper</a>).<br>  
                          </li>
                             <li> Investigate the data mollification effect as in <a href="https://arxiv.org/pdf/2305.18900.pdf">this paper</a> to compare different generative models on a set of experiments.<br>  
                          </li>
